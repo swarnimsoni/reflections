@@ -1,0 +1,47 @@
+Tools such as fc (in windows) and diff (in mac/linux) can help to find bugs or changes made from previous version.
+They not only speed up the procedure,  they are very accurate.
+
+Version Control
+	1. It useful to create drafts of articles/code, keeping earlier versions
+	2. Wikipedia has a history link, by which one can compare two versions of the page to find changes.
+	3. Few other examples are DropBox, google docs, 
+	
+	
+GIT
+	1. Commit: with every commit, git records commit id, message/description of change and the changes itself.
+	2. Git diff: one can see changes between two git commits by passing ids of those changes to this command.
+	
+
+Que:What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+
+From <https://classroom.udacity.com/courses/ud775/lessons/2980038599/concepts/25015285430923> 
+
+Manually doing commit allows user to decide the right moment for committing changes, he can decide how large or small the change should be, and allows him to separate two logical commits. Any automatic committing system will not have these qualities.
+
+Que: Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+From <https://classroom.udacity.com/courses/ud775/lessons/2980038599/concepts/24987385350923> 
+
+Because git is coding version controls system, often many changes have ripple effect and other files have to be changed as well. However, in google docs, all important information is contained in just one document (word/excel etc.).
+
+Que:How can you use the commands git log and git diff to view the history of files?
+
+From <https://classroom.udacity.com/courses/ud775/lessons/2980038599/concepts/24261685380923> 
+
+'git log [--stat]' allows user to see all the commits since the creation of project/repository, author of the commit, message and commit id (and with --stat option one can see number of adition and deletions).
+
+'git diff' command can be used to see changes in two different commits.
+
+Que:How might using version control make you more confident to make changes that could break something?
+
+From <https://classroom.udacity.com/courses/ud775/lessons/2980038599/concepts/29987985520923> 
+
+
+	1. I will be confident because previous version is safe and I can checkout that one at any time.
+	2. Above step, encourages developer to explore new ideas, big and small, without the worry of breaking the product/project.
+
+Que:Now that you have your workspace set up, what do you want to try using Git for?
+
+From <https://classroom.udacity.com/courses/ud775/lessons/2980038599/concepts/29966385750923> 
+
+	1. I would love to create some projects with Git, actually I have been looking for something like this, in-house version control system.

@@ -1,0 +1,31 @@
+Que:What happens when you initialize a repository? Why do you need to do it when you initialize a repository? Why do you need to do it?
+
+The repository is initialised as an empty repository, and if there any files already present in the folder, a message is displayed saying that these files are not being tracked. And this is done so that I can keep track of different versions of my files/code/project.
+
+Que:How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+It is a temporary conceptual place, where I can put files that I plan to change and commit. It is an intermediate place between working directory and the repository. It allows me to keep track of the files that I want to commit.
+
+Que:How can you use the staging area to make sure you have one commit per logical change?
+
+Before making the commit, I can use 'git diff --staged' command to review the difference in staging area and repository, which allows me to ensure that the change is one logical piece of work.
+
+Que:What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+Creating a new branch is like context switching. New branch becomes very useful in trying out new experimental feature, without the worry of breaking the working existing code.
+
+Git allows to share your branches master and others, with public. Master branch is something never expected break, and other branches can have active development, which you may expect to break. It signifies that the other branches (other than master branch) are not production quality code just yet.
+
+Branches are very good way to collaborate with yourself. You can create a new branch for a new experimental feature and can switch between branches easily.
+
+Que:How do the diagrams help you visualize the branch structure?
+
+It can help to identify which commits a branch has, and which it doesn't. it also organizes the branches as tree structure to find out, what point in time the new branches were created.
+
+Que:What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+Merging two branches results in logically bring together the changes in each branch. We draw it as a graph/tree because it is best way to visualize branches.
+
+Que:What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Automatic merging saves time and work, however, it cannot always resolve all the commits on its own. When git is not sure, it notifies the user about conflicts, which is nice because the user can make the decision what code to keep etc.
